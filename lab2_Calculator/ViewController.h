@@ -12,7 +12,7 @@
     IBOutlet UILabel * Display;
     bool operatorPressed;
     char op;
-    NSString *firstEntry;
+    NSString *operand;
 }
 
 
@@ -20,7 +20,7 @@
 //@property (weak, nonatomic) IBOutlet UILabel *Display;
 
 -(void)pushItem:(double) number;
--(double) calculate: (NSString*) oparation;
+-(double) calculate;
 
 - (IBAction)Oprator_Pressed:(id)sender;
 - (IBAction)DigitPressed:(id)sender;

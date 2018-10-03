@@ -20,7 +20,7 @@
 //    firstEntry = NULL;
 }
 
--(void) pushItem:(double)number{
+- (void) pushItem:(double)number{
     if(_items==nil){
         _items = [[NSMutableArray alloc]init];
     }else{
@@ -28,14 +28,14 @@
     }
 }
 
--(double) calculate:(NSString *)oparation{
-    if ([oparation isEqualToString: @"+"]) {
+-(double) calculate{
+    if ([operand isEqualToString: @"+"]) {
         return [self popItem] + [self popItem];
-    }else if([oparation isEqualToString: @"-"]){
+    }else if([operand isEqualToString: @"-"]){
         return [self popItem] - [self popItem];
-    }else if([oparation isEqualToString: @"/"]) {
+    }else if([operand isEqualToString: @"/"]) {
         return [self popItem] / [self popItem];
-    }else if([oparation isEqualToString: @"*"]){
+    }else if([operand isEqualToString: @"*"]){
         return [self popItem] * [self popItem];
     } else {
         return 0;
@@ -43,27 +43,24 @@
 }
 
 - (IBAction)Oprator_Pressed:(id)sender {
+    [self calculate];
     
+    operand = ((UIButton*)sender).titleLabel.text;
 }
 
 - (IBAction)DigitPressed:(id)sender {
-    
-    
-//    if(operatorPressed == false){
-//        firstEntry = [NSString stringWithFormat:@"%i", tag];
-//    }
-    
-//    Display.text = @"1";
     NSString *numString = ((UIButton*)sender).titleLabel.text;
     NSString *mainLabelString = Display.text;
     
-    mainLabelString = @"";
     Display.text = [mainLabelString stringByAppendingFormat:@"%@", numString];
-    
+    [self pushItem:numString];
     
 }
 
 - (IBAction)Enter_Pressed:(id)sender {
+    [self calculate];
+    operand = @"";
+    
 }
 
 -(double) popItem{
@@ -71,10 +68,7 @@
     [self.items removeLastObject];
     
     return [nsLastNum doubleValue];
-    
 }
-
-
 
 
 - (void)didReceiveMemoryWarning {
