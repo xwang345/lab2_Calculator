@@ -43,9 +43,9 @@
 }
 
 - (IBAction)Oprator_Pressed:(id)sender {
+    operand = ((UIButton*)sender).titleLabel.text;
     [self calculate];
     
-    operand = ((UIButton*)sender).titleLabel.text;
 }
 
 - (IBAction)DigitPressed:(id)sender {
@@ -53,14 +53,14 @@
     NSString *mainLabelString = Display.text;
     
     Display.text = [mainLabelString stringByAppendingFormat:@"%@", numString];
-    [self pushItem:numString];
+    numString.numberStyle = NSNumberFormatterDecimalStyle;
+    [self.pushItem:@"%d", numString];
     
 }
 
 - (IBAction)Enter_Pressed:(id)sender {
-    [self calculate];
     operand = @"";
-    
+    [self calculate];
 }
 
 -(double) popItem{
