@@ -30,7 +30,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="1"/>
                                 <connections>
-                                    <action selector="DigitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NSt-N5-eI0"/>
+                                    <action selector="DigitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="loL-qj-ee9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1c-7d-djs">
@@ -39,6 +39,7 @@
                                 <state key="normal" title="2"/>
                                 <connections>
                                     <action selector="DigitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rou-ZC-zwo"/>
+                                    <action selector="Oprator_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Gu-jE-jYT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FW3-Wn-7Sk">
@@ -46,7 +47,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="3"/>
                                 <connections>
-                                    <action selector="DigitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yEp-r7-sjK"/>
+                                    <action selector="DigitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ckp-dZ-Lkv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O5e-7r-b2o">
@@ -54,7 +55,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="4"/>
                                 <connections>
-                                    <action selector="DigitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Dh-gB-lBV"/>
+                                    <action selector="DigitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BGE-Ys-f1Y"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0X-Lt-H3I">
@@ -62,7 +63,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="5"/>
                                 <connections>
-                                    <action selector="DigitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="shi-h5-wZH"/>
+                                    <action selector="DigitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oGN-a7-Hwj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NiC-Kn-4xQ">
@@ -70,7 +71,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="6"/>
                                 <connections>
-                                    <action selector="DigitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cYC-y6-bya"/>
+                                    <action selector="DigitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VQG-0b-HjW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BoZ-Fa-Z0S">
@@ -78,7 +79,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="7"/>
                                 <connections>
-                                    <action selector="DigitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2hg-AD-0QU"/>
+                                    <action selector="DigitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JHY-6F-h6h"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYS-7G-hkB">
@@ -86,7 +87,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="8"/>
                                 <connections>
-                                    <action selector="DigitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HAe-3V-HSv"/>
+                                    <action selector="DigitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lOL-p9-wCG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vi9-vR-1lj">
@@ -94,7 +95,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="9"/>
                                 <connections>
-                                    <action selector="DigitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8eN-tR-FUB"/>
+                                    <action selector="DigitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6r8-Sj-Oem"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rzi-yf-C0f">
@@ -102,6 +103,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="/"/>
                                 <connections>
+                                    <action selector="Oprator_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qIy-jb-FfA"/>
                                     <action selector="Oprator_pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L1F-HK-l9O"/>
                                 </connections>
                             </button>
@@ -110,6 +112,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="*"/>
                                 <connections>
+                                    <action selector="Oprator_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w3Q-mO-mEF"/>
                                     <action selector="Oprator_pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ljD-I8-Bir"/>
                                 </connections>
                             </button>
@@ -118,6 +121,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="-"/>
                                 <connections>
+                                    <action selector="Oprator_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UeD-aq-OoH"/>
                                     <action selector="Oprator_pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xDl-P1-NcL"/>
                                 </connections>
                             </button>
@@ -126,7 +130,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="0"/>
                                 <connections>
-                                    <action selector="DigitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4m2-Kk-bKT"/>
+                                    <action selector="DigitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wpq-jg-OJT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5DL-7t-U2P">
@@ -134,7 +138,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Enter"/>
                                 <connections>
-                                    <action selector="Enter_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="akr-NL-f4i"/>
+                                    <action selector="Enter_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Mc-9f-i8W"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7c-ft-opt">
@@ -142,6 +146,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="+"/>
                                 <connections>
+                                    <action selector="Oprator_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="30o-iB-nF3"/>
                                     <action selector="Oprator_pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RUc-kh-tiN"/>
                                 </connections>
                             </button>
@@ -150,7 +155,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="Display" destination="tmB-7c-QYc" id="hdw-Fi-Vtv"/>
+                        <outlet property="Display" destination="tmB-7c-QYc" id="xRm-V8-n2S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

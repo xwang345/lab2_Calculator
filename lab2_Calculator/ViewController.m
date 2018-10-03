@@ -14,17 +14,11 @@
 
 @implementation ViewController
 
-//-(void)viewDidLoad{
-//    [super viewDidLoad];
+-(void)viewDidLoad{
+    [super viewDidLoad];
 //    operatorPressed = FALSE;
 //    firstEntry = NULL;
-//    secondEntry = NULL;
-//}
-//- (void)viewDidLoad {
-//    [super viewDidLoad];
-//    // Do any additional setup after loading the view, typically from a nib.
-////    operatorPressed = FALSE;
-//}
+}
 
 -(void) pushItem:(double)number{
     if(_items==nil){
@@ -49,9 +43,24 @@
 }
 
 - (IBAction)Oprator_Pressed:(id)sender {
+    
 }
 
 - (IBAction)DigitPressed:(id)sender {
+    
+    
+//    if(operatorPressed == false){
+//        firstEntry = [NSString stringWithFormat:@"%i", tag];
+//    }
+    
+//    Display.text = @"1";
+    NSString *numString = ((UIButton*)sender).titleLabel.text;
+    NSString *mainLabelString = Display.text;
+    
+    mainLabelString = @"";
+    Display.text = [mainLabelString stringByAppendingFormat:@"%@", numString];
+    
+    
 }
 
 - (IBAction)Enter_Pressed:(id)sender {
