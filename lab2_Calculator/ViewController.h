@@ -9,20 +9,17 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController{
-    IBOutlet UILabel * Display;
+//  IBOutlet UILabel * Display;
     bool operatorPressed;
     char op;
     NSString *operand;
 }
-
-
-@property (nonatomic) double number;
-//@property (weak, nonatomic) IBOutlet UILabel *Display;
+@property (weak, nonatomic) IBOutlet UILabel *Display;
 
 -(void)pushItem:(double) number;
--(double) calculate;
+-(double) calculate:(NSString *)operand;
 
-- (IBAction)Oprator_Pressed:(id)sender;
+- (IBAction)Oprator_pressed:(id)sender;
 - (IBAction)DigitPressed:(id)sender;
 - (IBAction)Enter_Pressed:(id)sender;
 

@@ -16,8 +16,6 @@
 
 -(void)viewDidLoad{
     [super viewDidLoad];
-//    operatorPressed = FALSE;
-//    firstEntry = NULL;
 }
 
 - (void) pushItem:(double)number{
@@ -28,9 +26,10 @@
     }
 }
 
--(double) calculate{
+-(double) calculate:(NSString *)operand{
     if ([operand isEqualToString: @"+"]) {
-        return [self popItem] + [self popItem];
+        NSLog(@"2222222222222%f",[self popItem] + [self popItem]);
+        return 0;
     }else if([operand isEqualToString: @"-"]){
         return [self popItem] - [self popItem];
     }else if([operand isEqualToString: @"/"]) {
@@ -42,26 +41,28 @@
     }
 }
 
-- (IBAction)Oprator_Pressed:(id)sender {
-    [self calculate];
-    
-    operand = ((UIButton*)sender).titleLabel.text;
+- (IBAction)Oprator_pressed:(id)sender {
+    UIButton *someButton = (UIButton*)sender;
+    NSLog(@"The button title is %@ ", [someButton titleForState:UIControlStateNormal]);
+    NSString *operandString =[someButton titleForState:UIControlStateNormal];
+//    NSLog(@"------------------%f",[self calculate:operandString]);
+    [self calculate:operandString];
 }
 
 - (IBAction)DigitPressed:(id)sender {
     NSString *numString = ((UIButton*)sender).titleLabel.text;
-    NSString *mainLabelString = Display.text;
+    NSString *mainLabelString = _Display.text;
     
-    
-    Display.text = [mainLabelString stringByAppendingFormat:@"%@", numString];
-    double number = [numString doubleValue];
-    [self pushItem:number];
+    _Display.text = [mainLabelString stringByAppendingFormat:@"%@", numString];
 }
 
 - (IBAction)Enter_Pressed:(id)sender {
-    [self calculate];
-    operand = @"";
     
+    NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+    [numberFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
+    NSNumber *numTemp = [numberFormatter numberFromString: _Display.text];
+    [self pushItem:[numTemp doubleValue]];
+    _Display.text = @"";
 }
 
 -(double) popItem{
