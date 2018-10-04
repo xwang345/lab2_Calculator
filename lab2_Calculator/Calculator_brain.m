@@ -14,13 +14,6 @@
 
 @implementation Calculator_brain : NSObject
 
--(Calculator_brain *)calculator{
-    if (_calculator){
-        _calculator = [[Calculator_brain alloc] init];
-    }
-    return _calculator;
-}
-
 
 - (void) pushItem:(double)number{
     if(_items==nil){
