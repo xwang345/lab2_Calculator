@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		560E37F32165F95400AAE711 /* Calculator_brain.m in Sources */ = {isa = PBXBuildFile; fileRef = 560E37F22165F95400AAE711 /* Calculator_brain.m */; };
 		5ED8AA692162E24A00FB384E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED8AA682162E24A00FB384E /* AppDelegate.m */; };
 		5ED8AA6C2162E24A00FB384E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED8AA6B2162E24A00FB384E /* ViewController.m */; };
 		5ED8AA6F2162E24A00FB384E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ED8AA6D2162E24A00FB384E /* Main.storyboard */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		560E37F12165F95400AAE711 /* Calculator_brain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Calculator_brain.h; sourceTree = "<group>"; };
+		560E37F22165F95400AAE711 /* Calculator_brain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Calculator_brain.m; sourceTree = "<group>"; };
 		5ED8AA642162E24A00FB384E /* lab2_Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lab2_Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ED8AA672162E24A00FB384E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5ED8AA682162E24A00FB384E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -103,6 +106,8 @@
 			children = (
 				5ED8AA672162E24A00FB384E /* AppDelegate.h */,
 				5ED8AA682162E24A00FB384E /* AppDelegate.m */,
+				560E37F12165F95400AAE711 /* Calculator_brain.h */,
+				560E37F22165F95400AAE711 /* Calculator_brain.m */,
 				5ED8AA6A2162E24A00FB384E /* ViewController.h */,
 				5ED8AA6B2162E24A00FB384E /* ViewController.m */,
 				5ED8AA6D2162E24A00FB384E /* Main.storyboard */,
@@ -265,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				560E37F32165F95400AAE711 /* Calculator_brain.m in Sources */,
 				5ED8AA6C2162E24A00FB384E /* ViewController.m in Sources */,
 				5ED8AA772162E24A00FB384E /* main.m in Sources */,
 				5ED8AA692162E24A00FB384E /* AppDelegate.m in Sources */,

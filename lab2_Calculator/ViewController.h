@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Caculator_brain.h"
 
 @interface ViewController : UIViewController{
 //  IBOutlet UILabel * Display;
@@ -15,9 +16,6 @@
     NSString *operand;
 }
 @property (weak, nonatomic) IBOutlet UILabel *Display;
-
--(void)pushItem:(double) number;
--(double) calculate:(NSString *)operand;
 
 - (IBAction)Oprator_pressed:(id)sender;
 - (IBAction)DigitPressed:(id)sender;
