@@ -52,9 +52,10 @@
     NSString *numString = ((UIButton*)sender).titleLabel.text;
     NSString *mainLabelString = Display.text;
     
-    Display.text = [mainLabelString stringByAppendingFormat:@"%@", numString];
-    [self pushItem:numString];
     
+    Display.text = [mainLabelString stringByAppendingFormat:@"%@", numString];
+    double number = [numString doubleValue];
+    [self pushItem:number];
 }
 
 - (IBAction)Enter_Pressed:(id)sender {
