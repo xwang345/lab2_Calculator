@@ -27,15 +27,19 @@
 }
 
 -(double) calculate:(NSString *)operand{
+    double tmp;
     if ([operand isEqualToString: @"+"]) {
-        NSLog(@"2222222222222%f",[self popItem] + [self popItem]);
-        return 0;
+        tmp = [self popItem] + [self popItem];
+        return tmp;
     }else if([operand isEqualToString: @"-"]){
-        return [self popItem] - [self popItem];
+        tmp = [self popItem] - [self popItem];
+        return tmp;
     }else if([operand isEqualToString: @"/"]) {
-        return [self popItem] / [self popItem];
+        tmp = [self popItem] / [self popItem];
+        return tmp;
     }else if([operand isEqualToString: @"*"]){
-        return [self popItem] * [self popItem];
+        tmp = [self popItem] * [self popItem];
+        return tmp;
     } else {
         return 0;
     }
@@ -45,8 +49,9 @@
     UIButton *someButton = (UIButton*)sender;
     NSLog(@"The button title is %@ ", [someButton titleForState:UIControlStateNormal]);
     NSString *operandString =[someButton titleForState:UIControlStateNormal];
-//    NSLog(@"------------------%f",[self calculate:operandString]);
-    [self calculate:operandString];
+    NSString *mainLabelString = _Display.text;
+    //show the opreation result to the lable.
+    _Display.text = [mainLabelString stringByAppendingFormat:@"%f", [self calculate:operandString]];
 }
 
 - (IBAction)DigitPressed:(id)sender {
@@ -61,14 +66,15 @@
     NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
     [numberFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
     NSNumber *numTemp = [numberFormatter numberFromString: _Display.text];
+    NSLog(@"++++++++++++++%@", numTemp);
     [self pushItem:[numTemp doubleValue]];
     _Display.text = @"";
 }
 
 -(double) popItem{
     NSNumber *nsLastNum = [self.items lastObject];
+    NSLog(@"--------%@",_items);
     [self.items removeLastObject];
-    
     return [nsLastNum doubleValue];
 }
 
